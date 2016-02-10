@@ -80,7 +80,7 @@ $.ajax({
     }
 });
 $.ajax({
-    url: "https://api.github.com/repos/ykaragol/ykaragol.github.io/contents/blogs/blogs.json",
+    url: "https://api.github.com/repos/aburakc/aburakc.github.io/contents/blogs/blogs.json",
  
     // The name of the callback parameter, as specified by the YQL service
     jsonp: "callback",
@@ -97,7 +97,7 @@ $.ajax({
 		for(var i in posts){
 			post = posts[i];
 			console.log(post);
-			$("#posts").append("<tr><td><a href='https://api.github.com/repos/ykaragol/ykaragol.github.io/contents/blogs/"+post.page_name+"'>"+post.title+"</a></td><td>"+post.written_date+"</td><td>"+post.description+"</td></tr>");
+			$("#posts").append("<tr><td><a href='https://api.github.com/repos/aburakc/aburakc.github.io/contents/blogs/"+post.page_name+"'>"+post.title+"</a></td><td>"+post.written_date+"</td><td>"+post.description+"</td></tr>");
 		}
 		
     }
